@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements</title>
+    <style>
+        p::first-letter {
+            font-size: 20px;
+            color: darkgray;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        ::selection {
+            color: red;
+        }
+        ul {
+            list-style: none;
+        }
+        li::before {
+            content: "☞ ";
+        }
+        .best::before {
+            content: "👍 ";
+        }
+        li::after {
+            content: "!";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam beatae blanditiis consectetur culpa inventore ipsum nostrum perspiciatis quaerat voluptatum?</p>
+    <p>Atque cumque cupiditate expedita laboriosam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem beatae dicta eaque eligendi esse exercitationem explicabo iste iure nisi obcaecati pariatur placeat qui quis repellat rerum sed tenetur, ullam unde.</p>
+    <p>Id inventore praesentium totam voluptas?</p>
+    <p>Corporis doloribus excepturi nisi repellendus!</p>
+    <p>Atque cupiditate incidunt necessitatibus sit.</p>
+    <ul>
+        <li>jeden</li>
+        <li class="best">dwa</li>
+        <li>trzy</li>
+    </ul>
+</body>
+</html>
