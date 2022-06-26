@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes selectors</title>
+    <style>
+        [data-color] {
+            background-color: red;
+            border: 2px dotted darkred;
+            font-weight: bold;
+        }
+
+        [data-color = "blue"] {
+            background-color: lightskyblue;
+            border: 2px solid darkblue;
+        }
+
+        [data-green = "light" i] {
+            background-color: lightgreen;
+        }
+
+        [data-green = "dark" i] {
+            background-color: green;
+        }
+
+        [class *= "str"] {
+            background-color: orange;
+        }
+
+        [class ~= "small-text"] {
+            font-size: 10px;
+        }
+
+        [class ^= "small-text"] {
+            border: 8px solid darkorange;
+        }
+
+        [class $= "box"] {
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div data-color>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam at aut voluptates. Libero nihil officiis quae sed ut velit.</div>
+    <div class="small-text str box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt ea ex nam omnis repellendus
+        vitae. Ab, aliquam asperiores distinctio eligendi error ex fugit, omnis quas recusandae velit voluptatum.
+    </div>
+    <div data-green="dArK">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci debitis deserunt ea ex nam omnis repellendus
+        vitae. Ab, aliquam asperiores distinctio eligendi error ex fugit, omnis quas recusandae velit voluptatum.
+    </div>
+    <p data-color="blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto delectus facere fugiat harum ipsam, neque nobis quae repellat voluptatibus!</p>
+</body>
+</html>
