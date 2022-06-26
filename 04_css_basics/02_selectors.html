@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        header {
+            background-color: black;
+            padding-bottom: 10px;
+        }
+        #logo {
+            width: 50px;
+            height: 50px;
+            margin-left: 5px;
+        }
+        ul {
+            text-align: center;
+        }
+        li > a {
+            color: white;
+            font-family: Verdana;
+        }
+        ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+
+        #header-gallery {
+            width: 100%;
+            height: 200px;
+            background: url("https://cdn.pixabay.com/photo/2015/03/22/23/07/bora-bora-685303_1280.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        main {
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p + ol {
+            background-color: azure;
+            padding: 20px;
+        }
+
+        .item {
+            font-weight: bold;
+        }
+
+        ol ~ p {
+            font-style: italic;
+        }
+
+        main h1, main p {
+            font-family: Verdana;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="logo" src="https://cdn.pixabay.com/photo/2017/02/18/19/20/logo-2078018_1280.png" alt="Logo" >
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Regulamin</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header id="header-gallery">
+
+    </header>
+    <main>
+        <article>
+            <h1>Moje wakacje</h1>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <ol>
+                <li class="item">Wyspa</li>
+                <li class="item">Góry</li>
+                <li class="item">Las</li>
+                <li class="item">Jeziora</li>
+                <li class="item">Równiny</li>
+            </ol>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, quam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, autem blanditiis ducimus eaque eius eos illo in maxime nemo numquam rem similique ut voluptas voluptatem? Dolor doloremque et ipsa, labore magni minima, natus nihil odit recusandae suscipit totam voluptatum. Accusantium adipisci amet aspernatur aut blanditiis consectetur consequuntur culpa cum cumque dignissimos dolor doloremque dolores eaque earum enim eos est eveniet hic ipsa labore laudantium, minus nam nesciunt optio perferendis possimus praesentium provident quaerat quia ratione recusandae sapiente sit suscipit totam veniam vitae voluptas. A aliquid et eum, exercitationem fugit, laboriosam, magnam quaerat quidem repellat totam velit voluptatibus! Perferendis, possimus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, autem blanditiis ducimus eaque eius eos illo in maxime nemo numquam rem similique ut voluptas voluptatem? Dolor doloremque et ipsa, labore magni minima, natus nihil odit recusandae suscipit totam voluptatum. Accusantium adipisci amet aspernatur aut blanditiis consectetur consequuntur culpa cum cumque dignissimos dolor doloremque dolores eaque earum enim eos est eveniet hic ipsa labore laudantium, minus nam nesciunt optio perferendis possimus praesentium provident quaerat quia ratione recusandae sapiente sit suscipit totam veniam vitae voluptas. A aliquid et eum, exercitationem fugit, laboriosam, magnam quaerat quidem repellat totam velit voluptatibus! Perferendis, possimus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aperiam, autem blanditiis ducimus eaque eius eos illo in maxime nemo numquam rem similique ut voluptas voluptatem? Dolor doloremque et ipsa, labore magni minima, natus nihil odit recusandae suscipit totam voluptatum. Accusantium adipisci amet aspernatur aut blanditiis consectetur consequuntur culpa cum cumque dignissimos dolor doloremque dolores eaque earum enim eos est eveniet hic ipsa labore laudantium, minus nam nesciunt optio perferendis possimus praesentium provident quaerat quia ratione recusandae sapiente sit suscipit totam veniam vitae voluptas. A aliquid et eum, exercitationem fugit, laboriosam, magnam quaerat quidem repellat totam velit voluptatibus! Perferendis, possimus!</p>
+        </article>
+    </main>
+</body>
+</html>
