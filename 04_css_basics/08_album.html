@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album zdjęć</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row; /* column */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-box {
+            margin: 10px;
+            padding: 5px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-family: Arial, Halvetica, SansSerif;
+            text-align: center;
+        }
+        .image-box:hover {
+            transform: scale(1.07);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/06/12/17/39/stairs-7258531__480.jpg" alt="Schody">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/06/05/12/40/hijab-7243963__340.jpg" alt="babeczka">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/06/04/11/19/city-7241725__340.jpg" alt="miasto">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2013/08/29/02/47/eiffel-tower-176935__340.jpg" alt="Paryż">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/06/17/09/50/cctv-surveillance-camera-7267551__340.jpg" alt="Kamery">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/06/19/18/31/traffic-7272520__340.jpg" alt="Ruch uliczny">
+            <div>Test</div>
+        </div>
+        <div class="image-box">
+            <img src="https://cdn.pixabay.com/photo/2022/02/23/19/20/flower-7031283__340.jpg" alt="Kwiat">
+            <div>Test</div>
+        </div>
+    </div>
+</body>
+</html>
