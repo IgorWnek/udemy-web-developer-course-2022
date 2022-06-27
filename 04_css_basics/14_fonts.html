@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        .serif {
+            font-family: 'Times New Roman', Times, Serif;
+        }
+        .sans-serif {
+            font-family: Halvetica, Verdana, Arial;
+        }
+        .monospace {
+            font-family: monospace, 'Lucida Console';
+        }
+        .roboto {
+            font-family: 'Roboto', sans-serif;
+            font-size: medium;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        h1 {
+            font-size: 1.5rem; /* rem referring to root which here is the <html> */
+        }
+        body {
+            font-size: 14px;
+        }
+        .red {
+            color: red;
+            border-width: 3px;
+            border-style: dotted;
+        }
+        .small {
+            font-variant: small-caps;
+        }
+        .font1 {
+            font: italic bold 18px/32px Arial, Halvetica;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor.</h1>
+    <p class="italic serif">Lorem ipsum dolor <b>sit amet</b>, consectetur adipisicing elit. Deleniti, odio.</p>
+    <p class="sans-serif bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, odio.</p>
+    <p class="monospace">Lorem <span class="small">ipsum dolor sit amet, consectetur</span> adipisicing elit. Deleniti, odio.</p>
+    <p class="roboto red">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, odio.</p>
+    <p class="font1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, odio.</p>
+</body>
+</html>
