@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs inline</title>
+    <style>
+        div {
+            background-color: lightgreen;
+        }
+        .red {
+            background-color: red;
+            /*display: inline-block;
+            margin: 10px;
+            padding: 5px;*/
+        }
+        .gray {
+            background-color: gray;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <span class="red"><i>Lorem ipsum dolor</i> <b>sit amet</b>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sint?</span>
+    <div>
+        div
+        <span class="red">Lorem ipsum dolor.</span>
+        <img width="100" src="https://cdn.pixabay.com/photo/2022/06/23/09/46/mountain-7279430_1280.jpg" alt="some picture">
+        <span class="green">Lorem ipsum dolor sit.</span>
+    </div>
+    <span class="gray">
+        <i>Lorem ipsum dolor</i> <b>sit amet</b>.
+        <img width="100" src="https://cdn.pixabay.com/photo/2022/06/23/09/46/mountain-7279430_1280.jpg" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sint?</span>
+    <span class="green"><i>Lorem ipsum dolor</i> <b>sit amet</b>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, sint?</span>
+</body>
+</html>
