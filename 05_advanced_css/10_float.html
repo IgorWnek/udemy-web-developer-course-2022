@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        .content {
+            border: 2px solid red;
+        }
+        .left {
+            float: left;
+            margin: 5px;
+        }
+        .right {
+            float: right;
+            margin: 5px;
+        }
+        span {
+            float: left;
+            background-color: gray;
+            padding: 5px;
+            margin: 5px;
+        }
+        .clearfix::after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+        }
+        article, aside {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .left-column {
+            width: 75%;
+            height: 300px;
+            padding: 10px;
+            float: left;
+            background-color: lightgreen;
+        }
+        .sidebar {
+            width: 25%;
+            height: 300px;
+            float: left;
+            background-color: lightgray;
+        }
+        .page {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="content clearfix">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A assumenda consequatur consequuntur cupiditate
+            deleniti dolor
+            <img class="right" width="100" src="https://cdn.pixabay.com/photo/2022/06/20/20/22/hedgehog-7274554_1280.jpg"
+                 alt="Hedge">
+            doloremque dolorum eveniet explicabo fugiat harum illum in necessitatibus nesciunt, non porro qui quia sequi
+            similique ullam vero voluptate voluptatem! Aliquid consectetur consequuntur earum error esse, facere fugit illum
+            laudantium maiores nemo provident quisquam quo reiciendis ullam vel veritatis voluptatem! Aliquam amet at
+            doloribus dolorum error illo inventore iure nostrum perspiciatis suscipit, vitae voluptas voluptates,
+            voluptatibus! A ab amet animi at atque aut dolorum enim exercitationem fuga incidunt ipsum itaque labore maiores
+            nam nulla perferendis quam quasi quibusdam quos sint totam, veniam vero voluptas voluptatum!
+            <span>Lorem ipsum 1.</span>
+            <span>Lorem ipsum 2.</span>
+            <span>Lorem ipsum 3.</span>
+            <span>Lorem ipsum 4.</span>
+        </header>
+        <article class="left-column">
+            article
+        </article>
+        <aside class="sidebar">
+            aside
+        </aside>
+    </div>
+</body>
+</html>
