@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position static and relative</title>
+    <style>
+        p {
+            position: static;
+            left: 100px; /* ignored */
+        }
+        .box {
+            position: relative;
+            bottom: 100px;
+            left: 50px;
+            width: 200px;
+            height: 100px;
+            background: lightgray;
+            border: 2px solid black;
+        }
+        .box2 {
+            background-color: green;
+            left: 15%;
+            bottom: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolores impedit, ipsum maiores nisi officiis quia suscipit unde voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolores impedit, ipsum maiores nisi officiis quia suscipit unde voluptatem.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi dolores impedit, ipsum maiores nisi officiis quia suscipit unde voluptatem.</p>
+    <div class="box">
+        div
+    </div>
+    <div class="box box2">
+        div
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ea eaque eveniet minima quibusdam veritatis voluptatibus! Beatae ex explicabo libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ea eaque eveniet minima quibusdam veritatis voluptatibus! Beatae ex explicabo libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ea eaque eveniet minima quibusdam veritatis voluptatibus! Beatae ex explicabo libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ea eaque eveniet minima quibusdam veritatis voluptatibus! Beatae ex explicabo libero.</p>
+</body>
+</html>
